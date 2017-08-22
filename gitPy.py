@@ -1,5 +1,7 @@
 import os
 
+print(os.getcwd())
+
 # rsync dotfiles to folder
 os.chdir('/home/zeal/p/python')
 print(os.getcwd())
