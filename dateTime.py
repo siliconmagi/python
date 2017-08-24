@@ -1,2 +1,3 @@
 from time import localtime, strftime
-print(strftime("%Y-%m-%d %H:%M:%S", localtime()))
+time = strftime("%Y-%m-%d %H:%M:%S", localtime())
+print(time)
