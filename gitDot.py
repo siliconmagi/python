@@ -1,4 +1,7 @@
 import os
+from time import localtime, strftime
+time = strftime("%Y-%m-%d %H:%M:%S", localtime())
+cmd = 'git commit -m "' + time + '"'
 
 # rsync dotfiles to folder
 os.system('rsync -avz ~/.config/fish/config.fish ~/p/dotfiles')
@@ -10,5 +13,5 @@ print(os.getcwd())
 
 # push changes to github
 os.system('git add -A')
-os.system('git commit -m "rsync"')
+os.system(cmd)
 os.system('git push')
