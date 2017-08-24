@@ -10,5 +10,5 @@ print(os.getcwd())
 
 # push changes to github
 os.system('git add -A')
-os.system('git commit -m time')
+os.system('git commit -m "time"')
 os.system('git push')
