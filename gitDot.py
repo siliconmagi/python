@@ -8,7 +8,8 @@ os.system('rsync -avz ~/.config/fish/config.fish ~/p/dotfiles')
 os.system('rsync -avz ~/.tmux.conf.local ~/p/dotfiles')
 os.system('rsync -avz ~/.bashrc ~/p/dotfiles')
 os.system('rsync -avz ~/.vimrc ~/p/dotfiles')
-os.chdir('/home/zeal/p/dotfiles')
+os.system('rsync -avz ~/.config/alacritty/alacritty.yml ~/p/dotfiles')
+os.chdir('/home/xeno/p/dotfiles')
 print(os.getcwd())
 
 # push changes to github
