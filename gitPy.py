@@ -5,7 +5,7 @@ cmd = 'git commit -m "' + time + '"'
 print(os.getcwd())
 
 # goto python folder
-os.chdir('/home/zeal/p/python')
+os.chdir('/home/xeno/p/python')
 print(os.getcwd())
 
 # push changes to github
