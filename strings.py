@@ -1,9 +1,8 @@
 import pandas as pd
+import requests
 
-df = pd.read_csv('http://bit.ly/kaggletrain')
+response = requests.get('https://httpbin.org/ip')
 
-df['sexMale'] = df['Sex'].map({'male': 1, 'female': 0})
+print('Your IP is {0}'.format(response.json()['origin']))
 
-print(df[['Sex', 'sexMale']].head())
 
-#  s1 = pd.Series(range(2, 7), name='s2')
